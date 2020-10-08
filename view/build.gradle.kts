@@ -10,5 +10,5 @@ webcomponent {
 dependencies {
     implementation(kotlin("stdlib-js"))
 
-    implementation("org.kodein.di:kodein-di:7.0.0")
+    implementation("org.kodein.di:kodein-di:7.1.0")
 }

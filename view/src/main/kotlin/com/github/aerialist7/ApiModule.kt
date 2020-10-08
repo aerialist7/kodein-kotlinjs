@@ -1,13 +1,13 @@
 package com.github.aerialist7
 
+import kotlinx.browser.document
 import org.kodein.di.DI.Module
 import org.kodein.di.bind
 import org.kodein.di.singleton
 import org.w3c.dom.Element
 import org.w3c.dom.HTMLElement
-import kotlin.browser.document
 
-fun <T : Element> apiModule() = Module(
+inline fun <reified T : Element> apiModule() = Module(
     name = "api",
     prefix = "aerialist7"
 ) {

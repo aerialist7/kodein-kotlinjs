@@ -11,6 +11,6 @@ fun HelloWorld(): HTMLElement {
 }
 
 private fun di() = DI {
-    import(apiModule<HTMLElement>()) // CCE
+    import(apiModule<HTMLElement>()) // MarkerError
 //    import(apiModule2()) // works!
 }
