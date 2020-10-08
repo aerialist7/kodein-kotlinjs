@@ -1,1 +1,1 @@
-# kodein-kotlinjs
+# kotlinjs-npm-external
