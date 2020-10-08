@@ -1,4 +1,4 @@
-rootProject.name = "kotlinjs-npm-external"
+rootProject.name = "kodein-kotlinjs"
 
 pluginManagement {
     repositories {
