@@ -1,7 +1,7 @@
 package com.github.aerialist7
 
-import org.kodein.di.DI
-import org.kodein.di.instance
+import org.kodein.di.Kodein
+import org.kodein.di.erased.instance
 import org.w3c.dom.HTMLElement
 
 @Suppress("FunctionName", "unused")
@@ -10,7 +10,6 @@ fun HelloWorld(): HTMLElement {
     return factory.create()
 }
 
-private fun di() = DI {
-    import(apiModule<HTMLElement>()) // CCE
-//    import(apiModule2()) // works!
+private fun di() = Kodein {
+    import(apiModule<HTMLElement>()) // works!
 }
